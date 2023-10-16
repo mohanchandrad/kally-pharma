@@ -1,0 +1,364 @@
+@media screen and (max-width:1230px) {
+    .row {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .inner_work_row {
+        margin-top: 130px;
+    }
+
+    .product_row {
+        margin: 30px auto;
+    }
+
+    .blog-row {
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 420px 420px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .product_row>.product_col {
+        width: 277px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header>nav ul>li>a {
+        font-size: 13px;
+    }
+    .container>.benar>.main-title>h1 {
+        font-size: 42px;
+    }
+
+    #work .section-title h2 {
+        width: 54%;
+    }
+
+    #work .work_card_row {
+        flex-wrap: wrap;
+        row-gap: 117px;
+        column-gap: 20px;
+    }
+
+    .product_row {
+        column-gap: 20px;
+        justify-content: center;
+    }
+
+    .product_row>.product_col {
+        width: 45%;
+    }
+
+
+    .blog-row {
+        grid-template-columns: 70%;
+    }
+
+
+    /* about page style  */
+    .about-benar p {
+        font-size: 14px;
+    }
+
+    .min-con .medicine_row {
+        grid-template-columns: 19% 42% 30%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .container-fluide::after {
+        width: 100%;
+        z-index: -2;
+    }
+
+    .container-fluide::before {
+            content: '';
+            width: 100%;
+            background-color: #7d73735c;
+            z-index: -1;
+    }
+
+    header>nav>.toggle {
+        display: flex;
+    }
+
+    header>nav>.nav-link {
+        position: fixed;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+        width: 50%;
+        background-color: #397c83;
+        transform: translate(100%);
+        transition: 300ms ease-in-out;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .d-none {
+        display: block;
+        overflow: hidden;
+    }
+
+    .d-none img {
+        margin-left: 31px;
+    }
+
+
+    header>nav>.nav-link>ul {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 36px;
+        gap: 24px;
+    }
+
+    header>nav>.nav-link>ul a {
+        font-size: 14px;
+        color: #ffff;
+        border-bottom: 1px solid #699da3;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    header>nav>.nav-link>ul a:hover {
+        color: #ffff;
+    }
+
+    header>nav ul>li>a:hover:before {
+        height: 0;
+    }
+
+
+    .h-social-icon>ul {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: baseline;
+        gap: 23px;
+    }
+
+    .h-social-icon>ul>li {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #84b2b7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .h-social-icon>ul>li>a {
+        color: #ffff !important;
+        font-size: 18px;
+    }
+
+    header>nav .hide_menu {
+        display: block;
+        font-size: 26px;
+        color: #ebebeb;
+        padding: 0px 28px;
+        text-align: end;
+    }
+
+    .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container>.benar {
+        height: auto;
+        margin-top: 0px;
+    }
+
+    #work .section-title h2 {
+        width: 63%;
+        font-size: 28px;
+    }
+
+    /* benar section  */
+    /* benar section  */
+    .container>.benar {
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    .container>.benar>.main-title>h1 {
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .container>.benar>.dis>p {
+        color: #ffff;
+    }
+
+    .inner_work_row {
+        flex-direction: column-reverse;
+    }
+
+    .inner_work_row>.inner_right_card {
+        width: 99%;
+    }
+
+    .inner_work_row>.inner_col_image {
+        width: 100%;
+        background-image: none;
+        text-align: center;
+    }
+
+    .inner_work_row>.inner_col_image>img {
+        display: block;
+        width: 69%;
+        margin: 20px auto 0px;
+    }
+
+    .rating {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .rating>.rating-col {
+        width: 227px;
+        text-align: center;
+    }
+
+    .blog-row {
+        grid-template-columns: 80%;
+    }
+
+    /* about page  */
+    .about-con {
+        height: auto;
+    }
+
+    .about-benar {
+        width: 100%;
+    }
+    .about-benar h1 {
+        color: #ffff;
+    }
+    .about-benar p {
+        color: #ffff;
+        font-size: 15px;
+    }
+
+    .min-con .medicine_row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+.min-con .medicine_row .medicine_col h4 {
+    display: none;
+    overflow: hidden;
+}
+
+.min-con .medicine_row .medicine_col .f-name {
+    display: none;
+}
+
+.min-con .medicine_row .medicine_col img:hover {
+    transform: scale(1);
+}
+
+}
+
+@media screen and (max-width:900px) {
+    footer .f-item {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 0;
+        row-gap: 50px;
+    }
+
+    .min-con .medicine_row .medicine_col .compo p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:767px) {
+
+    header>nav>.nav-link {
+        transform: translate(-0%) !important;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .container-fluide {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    header>nav>.nav-link {
+        width: 80%;
+    }
+
+    .container>.benar {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    .inner_section_title {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .container>.benar>.dis>p {
+        width: 100%;
+    }
+
+    .container>.benar>.main-title>h1 {
+        font-size: 35px;
+    }
+
+    .work_card_row>.work_card_col {
+        width: 100%;
+        background-size: 100%;
+    }
+
+    #work .section-title h2 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .inner_work_row>.inner_col h2 {
+        font-size: 21px;
+    }
+
+    .inner_work_row>.inner_col_image>img {
+        width: 100%;
+    }
+
+    footer .f-item {
+        grid-template-columns: 100%;
+        gap: 0;
+        row-gap: 50px;
+    }
+
+    .blog-row {
+        grid-template-columns: 100%;
+    }
+
+    #start p {
+        width: auto;
+    }
+
+    .product_row>.product_col {
+        width: 100%;
+    }
+
+    #start .message-box {
+        width: 90%;
+    }
+}
