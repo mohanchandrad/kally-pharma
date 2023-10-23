@@ -17,20 +17,36 @@
             <nav class="row">
                 <div class="logo">
                     <img src="./images/logo.png" alt="">
+                    <span>Kelly Pharma</span>
                 </div>
                 <div class="nav-link" id="menu">
+                    <!-- responsive menu coontent start -->
                     <div class="hide_menu" onclick="hideMenu()">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                     <div class="mid-logo d-none">
                         <img src="./images/logo.png" alt="">
                     </div>
-                    <ul>
-                        <li><a href="#home" class="active">home</a></li>
-                        <li><a href="#product">categorise</a></li>
-                        <li><a href="./about.html">about us</a></li>
-                        <li><a href="./product.html">Our Product</a></li>
-                        <li><a href="#blog">blog</a></li>
+                    <!-- responsive menu coontent end -->
+
+                    <ul class="nav_main_menu">
+                        <li><a href="./index.html" class="active">home</a></li>
+                        <li class="sub-menu" onclick="droupmenu()">
+                            <a class="sub_menu_link" href="#">categorise <i style="padding-left: 10px;"
+                                    class="fa-solid fa-caret-down"></i></a>
+                            <!-- dropu-dwoen_menu  -->
+                            <!-- dropu-dwoen_menu  -->
+                            <ul class="dropu-dwoen_menu" id="droup_menu">
+                                <li><a href="./tablets.html">Tablets</a></li>
+                                <li><a href="./syrup.html">Syrup</a></li>
+                                <li><a href="./capsule.html">Capsule</a></li>
+                                <li><a href="./injection.html">INJECTION</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about">about us</a>
+
+                        </li>
+                        <li><a href="#product">Our Product</a></li>
                         <li><a href="#contact">contact us</a></li>
                     </ul>
 
@@ -47,7 +63,7 @@
                     <span></span>
                     <span></span>
                 </div>
-             
+
             </nav>
 
         </header>
@@ -67,8 +83,7 @@
     </div>
 
     <!-- this is awork section  -->
-    <!-- this is awork section  -->
-    <section id="work">
+    <section id="work" style="margin: 70px 0px 70px;">
         <div class="inner-conteiner">
             <div class="section-title">
                 <h2 class="inner_section_title">we are providing worlds best listed medicine </h2>
@@ -95,25 +110,7 @@
                 </div>
             </div>
 
-            <div class="inner_work_row row">
-                <div class="inner_col inner_col_image inner_left_card">
-                    <!-- <img src="./images/Rectangle25.png" alt=""> -->
-                </div>
-                <div class="inner_col inner_right_card">
-                    <h2>
-                        We offer the world's finest listed medication
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. Dictum urna orci arcu fringilla dictumst. Amet at mauris
-                        amet sit felis non dignissim vitae porttitor. Posuere ac aenean nunc integer. Vestibulum
-                        vulputate enim pellentesque cras semper ut nunc at enim. Massa vel et pellentesque iaculis. </p>
-                    <p style="margin-top: 15px;">
-                        Vel facilisi eleifend velit mauris feugiat eget ac commodo nisl. Aenean quam purus quisque dui
-                        ut eu justo duis cras. In mi ullamcorper turpis amet morbi lacus quam nunc. Eu orci urna purus
-                        dictum. Imperdiet proin eu amet a malesuada. Ipsum volutpat dictumst pretium fauci.
-                    </p>
-                    <a href="" class="btn">Explore the product <i class="fa-solid fa-chevron-right"></i></a>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -203,30 +200,91 @@
             <a href="#" class="all">View All</a>
         </div>
     </section>
-    <!-- product section start  -->
+    <!-- product section end  -->
+
+    <!-- about section start  -->
+    <section id="about">
+        <div class="product_title">
+            <h2 class="inner_section_title">who we are</h2>
+        </div>
+        <div class="inner-conteiner">
+            <div class="about-row row">
+                <div class="about-col about-col-1">
+                    <img src="./images/Rectangle115.png" style="width: 100%;" alt="">
+                </div>
+                <div class="about-col">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus blanditiis corporis,
+                        consectetur quis pariatur labore assumenda nobis ipsum molestias adipisci voluptatum dolor
+                        dignissimos possimus amet id! Libero officia tenetur temporibus magni illum ab dignissimos,
+                        excepturi obcaecati a illo facere eveniet, aperiam dicta laudantium perferendis earum eum
+                        recusandae possimus sequi, quidem velit laborum dolorum explicabo. Assumenda iusto neque ratione
+                        libero ab ducimus, pariatur saepe dolor quibusdam laboriosam, ut nobis voluptates adipisci,
+                        blanditiis sed eaque modi facere facilis?
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-row ab-row-2 row">
+                <div class="about-col">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus blanditiis corporis,
+                        consectetur quis pariatur labore assumenda nobis ipsum molestias adipisci voluptatum dolor
+                        dignissimos possimus amet id! Libero officia tenetur temporibus magni illum ab dignissimos,
+                        excepturi obcaecati a illo facere eveniet, aperiam dicta laudantium perferendis earum eum
+                        recusandae possimus sequi, quidem velit laborum dolorum explicabo. Assumenda iusto neque ratione
+                        libero ab ducimus, pariatur saepe dolor quibusdam laboriosam, ut nobis voluptates adipisci,
+                        blanditiis sed eaque modi facere facilis? Qui,
+                    </p>
+                </div>
+                <div class="about-col about-col-2">
+                    <img src="./images/Rectangle115.png" style="width: 100%;" alt="">
+                </div>
+            </div>
+
+            <div class="about-row row">
+                <div class="about-col about-col-3">
+                    <img src="./images/Rectangle115.png" style="width: 100%;" alt="">
+                </div>
+                <div class="about-col">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus blanditiis corporis,
+                        consectetur quis pariatur labore assumenda nobis ipsum molestias adipisci voluptatum dolor
+                        dignissimos possimus amet id! Libero officia tenetur temporibus magni illum ab dignissimos,
+                        excepturi obcaecati a illo facere eveniet, aperiam dicta laudantium perferendis earum eum
+                        recusandae possimus sequi, quidem velit laborum dolorum explicabo. Assumenda iusto neque ratione
+                        libero ab ducimus, pariatur saepe dolor quibusdam laboriosam, ut nobis voluptates adipisci,
+                        blanditiis sed eaque modi facere facilis?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section start  -->
+
 
     <section id="price">
         <div class="inner-conteiner">
             <div class="rating row">
                 <div class="rating-col">
-                    <h3 ><span class="count">5</span></h3>
+                    <h3><span class="count">5</span></h3>
                     <p>approved
                         medicine</p>
                 </div>
 
                 <div class="rating-col">
-                    <h3 ><span class="count">7</span></h3>
+                    <h3><span class="count">7</span></h3>
                     <p>rare diseases </p>
                 </div>
 
                 <div class="rating-col">
-                    <h3><span  class="count">25</span>+</h3>
+                    <h3><span class="count">25</span>+</h3>
                     <p>offices
                         worldwide</p>
                 </div>
 
                 <div class="rating-col">
-                    <h3 ><span class="count">3000</span>+</h3>
+                    <h3><span class="count">3000</span>+</h3>
                     <p>talented
                         colleagues</p>
                 </div>
@@ -234,58 +292,67 @@
         </div>
     </section>
 
-    <!-- blog section start  -->
-    <section id="blog">
 
+    <section id="work">
         <div class="inner-conteiner">
-            <div class="blog-section-title">
-                <h2 class="inner_section_title">Our Blog</h2>
+            <div class="inner_work_row row">
+                <div class="inner_col inner_col_image inner_left_card">
+                    <!-- <img src="./images/Rectangle25.png" alt=""> -->
+                </div>
+                <div class="inner_col inner_right_card">
+                    <h2>
+                        We offer the world's finest listed medication
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Dictum urna orci arcu fringilla dictumst. Amet at mauris
+                        amet sit felis non dignissim vitae porttitor. Posuere ac aenean nunc integer. Vestibulum
+                        vulputate enim pellentesque cras semper ut nunc at enim. Massa vel et pellentesque iaculis. </p>
+                    <p style="margin-top: 15px;">
+                        Vel facilisi eleifend velit mauris feugiat eget ac commodo nisl. Aenean quam purus quisque dui
+                        ut eu justo duis cras. In mi ullamcorper turpis amet morbi lacus quam nunc. Eu orci urna purus
+                        dictum. Imperdiet proin eu amet a malesuada. Ipsum volutpat dictumst pretium fauci.
+                    </p>
+                    <a href="" class="btn">Explore the product <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
             </div>
-            <div class="blog-row row">
-                <div class="blog-col">
-                    <div class="blog-image">
-                        <img src="./images/Rectangle33 (1).png" alt="">
+        </div>
+    </section>
+
+    <!-- contact section start  -->
+    <section id="contact">
+        <div class="inner-conteiner">
+            <form action="">
+                <h2 class="inner_section_title">Contact With Us</h2>
+                <div class="contact_row">
+                    <div class="contect-col">
+                        <input type="text" placeholder="Full Name">
                     </div>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Dictum urna
-                        ctumst. Amet at mauris amet sit felis non dignissim
-                        ac aenean nunc integer. Vestibulum</p>
+                    <div class="contect-col">
+                        <input type="text" placeholder="Phone Number">
+                    </div>
                 </div>
-                <div class="blog-col">
-                  <div class="blog-image">
-                    <img src="./images/Rectangle33.png" alt="">
-                  </div>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Dictum urna
-                        ctumst. Amet at mauris amet sit felis non dignissim
-                        ac aenean nunc integer. Vestibulum</p>
+
+                <div class="contact_row">
+                    <div class="contect-col">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="contect-col">
+                        <input type="text" placeholder="Subject">
+                    </div>
                 </div>
-            </div>
+                <textarea name="" id="" cols="30" rows="7"></textarea>
+                <div class="btn-box">
+                    <button class="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- blog section end  -->
+    <!-- contact section end -->
 
-    <!-- blog section start  -->
-    <section id="start">
-        <div class="inner-conteiner">
-            <h2 class="inner_section_title">get started today !</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Dictum urna
-                ctumst. Amet at mauris amet sit felis non dignissim
-                ac aenean nunc integer. Vestibulum</p>
-            <div class="message-box">
-                <input type="text" placeholder="Email Address...">
-                <button type="submit">Send</button>
-            </div>
-        </div>
-    </section>
-    <!-- blog section end  -->
-
-
-
-    <footer id="contact">
+    <footer>
         <div class="inner-conteiner">
             <div class="f-logo row">
                 <img src="./images/logo.png" alt="">
+                <span>Kelly Pharma</span>
             </div>
             <div class="f-item row">
                 <div class="f-col">
@@ -326,10 +393,13 @@
                     <h4>Address</h4>
                     <ul>
                         <li>
-                           <a href="#" class="addres-link"> <img src="./images/location.png" alt=""> Lorem ipsum dolor sit amet.</a>
-                         </li>
-                        <li><a  class="addres-link" href="mailto:demo@gmail.com"><img src="./images/email.png" alt=""> demo@gmail.com</a></li>
-                        <li><a  class="addres-link" href="tel:123-345-678"><img src="./images/phone.png" alt=""> + 125-345-678</a></li>
+                            <a href="#" class="addres-link"> <img src="./images/location.png" alt=""> Lorem ipsum dolor
+                                sit amet.</a>
+                        </li>
+                        <li><a class="addres-link" href="mailto:demo@gmail.com"><img src="./images/email.png" alt="">
+                                demo@gmail.com</a></li>
+                        <li><a class="addres-link" href="tel:123-345-678"><img src="./images/phone.png" alt=""> +
+                                125-345-678</a></li>
                     </ul>
                 </div>
             </div>
@@ -339,10 +409,8 @@
     </footer>
 </body>
 
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 <script src="./js/script.js"></script>
 
 

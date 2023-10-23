@@ -5,18 +5,24 @@
     }
 
     .inner_work_row {
-        margin-top: 130px;
+        margin-top:70px;
     }
 
     .product_row {
         margin: 30px auto;
     }
 
-    .blog-row {
-        gap: 30px;
+    #about .about-row {
         display: grid;
-        grid-template-columns: 420px 420px;
-        margin-top: 40px;
+        grid-template-columns: 40% 55%;
+    }
+
+    #products .prod_row {
+        width: 90%;
+    }
+
+    .modal_row {
+        width: 100%;
     }
 }
 
@@ -64,8 +70,31 @@
         font-size: 14px;
     }
 
-    .min-con .medicine_row {
-        grid-template-columns: 19% 42% 30%;
+  
+
+    #products .prod_row .pro_col h3 {
+        font-size: 25px;
+    }
+    #products .prod_row .pro_col p {
+        font-size: 15px;
+    }
+
+    /* -------- modal section ------------  */
+
+    .modal_row .modal_col img {
+        padding-bottom: 0px;
+    }
+    .modal_row .modal_col h2 {
+        font-size: 22px;
+    }
+
+    .modal_row .modal_col p {
+        font-size: 14px;
+    }
+
+    .modal_con {
+         width: 90%;
+         margin: 0px auto;
     }
 }
 
@@ -133,6 +162,26 @@
 
     header>nav ul>li>a:hover:before {
         height: 0;
+    }
+
+    header>nav ul> .sub-menu ul {
+        position: relative;
+        background-color: transparent;
+        /* display: flex; */
+        width: 100%;
+        padding: 0px;
+        margin-top: 13px;
+    }
+
+    .sub-menu:hover.sub-menu ul{
+        display: none;
+    }
+    .sub_menu_link {
+        display: flex;
+        justify-content: space-between;
+    }
+    header>nav ul> .sub-menu ul::before {
+        background-color: transparent;
     }
 
 
@@ -236,6 +285,27 @@
         grid-template-columns: 80%;
     }
 
+    #about .ab-row-2 {
+        grid-template-columns: 100% !important;
+    }
+    #about .about-row .about-col {
+        background-image: none;
+    }
+    #about .about-row .about-col img {
+        display: block;
+        width: 90% !important;
+        margin: 0px auto 30px;
+    }
+
+    #about .about-row {
+        grid-template-columns: 100%;
+    }
+
+    #about .ab-row-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     /* about page  */
     .about-con {
         height: auto;
@@ -293,6 +363,57 @@
     }
 }
 
+@media screen and (max-width:650px){
+    #contact form {
+        width: 100%;
+        padding-bottom: 20px;
+        background-size: cover;
+        padding: 30px 20px;
+    }
+
+    #contact form .contact_row {
+      
+        grid-template-columns: auto;
+    }
+
+    #products .prod_row {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 40px;
+    }
+
+    #products .prod_row .mid {
+        min-height: auto;
+        border-right: none;
+    }
+
+    #products .prod_row .pro_col {
+        width: 100%;
+    }
+
+    #products .prod_row .pro_col h3 {
+        font-size: 25px;
+        text-align: start;
+        margin-top: 25px;
+    }
+
+    /* <---------- modal section --------> */
+
+    .modal_row {
+        flex-direction: column;
+    }
+
+    .modal_row .modal_col h3 {
+        text-align: start;
+    }
+
+    .modal_col_left {
+        border-left: 0px;
+        padding-left: 0px;
+    }
+}
+
 @media screen and (max-width:568px) {
     .container-fluide {
         width: 100%;
@@ -306,6 +427,14 @@
 
     .container>.benar {
         margin-top: 35px;
+        width: 100%;
+    }
+
+    #work .work_card_row {
+        margin-bottom: 100px;
+    }
+
+    .work_card_row>.work_card_col>.inner-card  {
         width: 100%;
     }
 
@@ -361,4 +490,6 @@
     #start .message-box {
         width: 90%;
     }
+
+
 }
